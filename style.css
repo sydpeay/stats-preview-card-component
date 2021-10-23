@@ -1,12 +1,164 @@
 * {
   box-sizing: border-box;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  background-color: hsl(277, 64%, 61%);
+  display: flex;
+	border-radius: 0.5em;
+	overflow: hidden;
+}
+
+img {
+  opacity: 0.5;
+}
+
+#text-container {
+  background-color: hsl(244, 38%, 16%);
+}
+
+#stats-container {
+  display: flex;
+}
+
+/* text styles */
+h1.main-heading {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+	line-height: 1.4em;
+}
+
+em {
+  font-style: normal;
+  font-size: 1em;
+  color: hsl(277, 64%, 61%);
+}
+
+p.main-paragraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", Arial, sans-serif;
+  line-height: 1.75;
+}
+
+p.stat-number {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+p.stat-word {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: "Inter", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.stat-item {
+  line-height: 1.75;
 }
 
 .attribution {
-  font-size: 11px;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 0.75em;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: inherit;
+}
+
+/* mobile */
+
+@media (max-width: 375px) {
+	body {
+		padding: 3em 3em 1em 3em;
+	}
+	
+  #container {
+    width: 22em;
+    flex-direction: column;
+  }
+	
+	#text-container {
+		padding: 2em;
+	}
+	
+	#stats-container {
+		flex-direction: column;
+	}
+
+  h1.main-heading {
+    text-align: center;
+  }
+
+  p.main-paragraph {
+    text-align: center;
+		padding: 1em 0;
+  }
+
+  p.stat-number {
+    text-align: center;
+  }
+
+  p.stat-word {
+    text-align: center;
+  }
+	
+	.attribution {
+		padding-top: 3rem;
+	}
+
+}
+
+/* desktop */
+
+@media (min-width: 375px) {
+	body {
+		padding: 10em 10em 1em 10em;
+	}
+	
+  #container {
+    flex-direction: row;
+		height: 30em;
+		width: 72em;
+  }
+
+  img {
+    order: 2;
+  }
+
+  #text-container {
+    order: 1;
+		padding: 5em 8em 5em 5em;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+  }
+	
+	#stats-container {
+		flex-direction: row;
+	}
+	
+	.stat-item {
+		width: 33.33%;
+	}
+	
+	.attribution {
+		padding-top: 8em;
+	}
 }
