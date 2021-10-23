@@ -89,36 +89,36 @@ p.stat-word {
 		padding: 3em 3em 1em 3em;
 	}
 	
-  #container {
-    width: 22em;
-    flex-direction: column;
-  }
-	
+	#container {
+		width: 22em;
+		flex-direction: column;
+	}
+
 	#text-container {
 		padding: 2em;
 	}
-	
+
 	#stats-container {
 		flex-direction: column;
 	}
 
-  h1.main-heading {
-    text-align: center;
-  }
+	h1.main-heading {
+		text-align: center;
+	}
 
-  p.main-paragraph {
-    text-align: center;
+	p.main-paragraph {
+		text-align: center;
 		padding: 1em 0;
-  }
+	}
 
-  p.stat-number {
-    text-align: center;
-  }
+	p.stat-number {
+		text-align: center;
+	}
 
-  p.stat-word {
-    text-align: center;
-  }
-	
+	p.stat-word {
+		text-align: center;
+	}
+
 	.attribution {
 		padding-top: 3rem;
 	}
@@ -131,34 +131,35 @@ p.stat-word {
 	body {
 		padding: 10em 10em 1em 10em;
 	}
-	
-  #container {
-    flex-direction: row;
+
+	#container {
+		flex-direction: row;
 		height: 30em;
 		width: 72em;
-  }
+	}
 
-  img {
-    order: 2;
-  }
+	img {
+		order: 2;
+	}
 
-  #text-container {
-    order: 1;
+	#text-container {
+		order: 1;
 		padding: 5em 8em 5em 5em;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-  }
-	
+	}
+
 	#stats-container {
 		flex-direction: row;
 	}
-	
+
 	.stat-item {
 		width: 33.33%;
 	}
-	
+
 	.attribution {
 		padding-top: 8em;
 	}
+
 }
